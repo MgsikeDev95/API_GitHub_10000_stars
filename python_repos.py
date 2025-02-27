@@ -1,5 +1,9 @@
 import requests
 
+#Fase exploratória para vizualizarmos as infos que recebos depois request
+#Descobrir os dados que temos para pode extrair e criar uma visualização 
+#Daquilo que realmente queremos no python_repos_visual.py
+
 # Definição da URL da API do GitHub para buscar repositórios Python populares
 url = "https://api.github.com/search/repositories?q=language:python+sort:stars+stars:>10000"
 
