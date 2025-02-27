@@ -15,7 +15,7 @@ bash
 pip install plotly
 
 
-**4**Run the script:
+**4**-Run the script:
 Execute the script by running the following command in your terminal or command prompt:
 bash
 python python_repos_visual.py
@@ -23,19 +23,19 @@ python python_repos_visual.py
 Como Usar
 Baixe os arquivos:
 
-**1**Na página do repositório no GitHub, clique no botão "Code" e depois selecione "Download ZIP".
+**1**-Na página do repositório no GitHub, clique no botão "Code" e depois selecione "Download ZIP".
 Extraia o arquivo ZIP para uma pasta no seu computador.
 Instale o Python:
 
-**2**Se você ainda não tem o Python instalado, pode baixá-lo e instalá-lo a partir do site oficial: https://www.python.org/downloads/.
+**2**-Se você ainda não tem o Python instalado, pode baixá-lo e instalá-lo a partir do site oficial: https://www.python.org/downloads/.
 Certifique-se de marcar a opção "Add Python to PATH" durante o processo de instalação.
 
-**3**Instale as dependências:
+**3**-Instale as dependências:
 O script usa a biblioteca plotly para criar a visualização. Para instalá-la, abra o terminal ou prompt de comando e execute:
 bash
 pip install plotly
 
-**4**Execute o script:
+**4**-Execute o script:
 Execute o script rodando o seguinte comando no terminal ou prompt de comando:
 bash
 python
