@@ -68,9 +68,9 @@ O header informa que queremos a resposta no formato JSON da versão 3 da API do 
 Fazemos uma requisição GET à API do GitHub usando `requests.get()` e armazenamos na variável `r`. Depois, `response_dict = r.json()` converte o objeto de resposta em um dicionário.  
 Após isso, verificamos se os resultados estão completos e imprimimos uma mensagem para testar se foram retornados os resultados completos.
 
-No `response_dict`, temos dicionários que foram obtidos após armazenar na variável `r`, onde usamos uma requisição `.get()` com um cabeçalho (header) para obter a informação que viria. Após receber a resposta, `r.json()` foi utilizado para converter os dados em um dicionário Python.
+No `response_dict`, temos um dicinário que foi obtido após armazenar na variável `r`, onde usamos uma requisição `.get()` com um cabeçalho (header) para obter a informação que viria. Após receber a resposta, `r.json()` foi utilizado para converter os dados em um dicionário Python.
 
-A variável `repo_dicts` recebeu `['items']`, que é uma lista de dicionários. Em seguida, criamos 3 listas vazias e usamos um loop `for`, onde `repo_dict` (uma variável temporária) vai receber cada uma das informações que estabelecemos. No caso, essas informações são as chaves `['name']` e `['html_url']`, que vão criar uma f-string com o nome, que será um link para o repositório, e `['stargazers_count']`, que vai definir o que será atribuído às variáveis com o método `append()`.
+A variável `repo_dicts` recebeu ´response_dict['items']`, que é uma lista de dicionários. Em seguida, criamos 3 listas vazias e usamos um loop `for`, onde `repo_dict` (uma variável temporária) vai receber cada uma das informações que estabelecemos. No caso, essas informações são as chaves `['name']` e `['html_url']`, que vão criar uma f-string com o nome, que será um link para o repositório, e `['stargazers_count']`, que vai definir o que será atribuído às variáveis com o método `append()`.
 
 Depois, criamos a visualização dos dados usando a biblioteca `plotly.express`, que está com o alias `px`.  
 `title` salva o nome do gráfico que será feito, e `labels` salva os nomes que serão expostos nos eixos do gráfico. `fig = px.bar(...)` determina que o gráfico será de barras, e ali determinamos o que será atribuído a cada eixo: no eixo X, o nome com link, e no eixo Y, a quantidade de estrelas.  
